@@ -1,0 +1,369 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --background-color: #1c2431;
+  --second-background: #181f2a;
+  --text-color: white;
+  --background-image: linear-gradient(90deg, #65e2d9 2%, #339ecc 100%);
+  --title-color: #65e2d9;
+  --text-color-second: #e6e6e6;
+}
+
+body {
+  background-color: var(--background-color);
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+}
+
+ul,
+a {
+  text-decoration: none;
+  list-style-type: none;
+}
+
+p {
+  opacity: 0.8;
+  line-height: 1.5em;
+  color: var(--text-color-second);
+}
+
+/* HEADER */
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 1rem;
+  max-width: 1190px;
+  margin: 0 auto;
+}
+
+.logo {
+  width: 150px;
+}
+
+nav .nav-list {
+  display: flex;
+  gap: 2rem;
+}
+
+.nav-item {
+  margin-left: 20px;
+}
+
+.nav-link {
+  color: var(--text-color-second);
+  font-family: "Raleway", sans-serif;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+
+.nav-link:hover {
+  color: var(--text-color);
+}
+
+/* MAIN SECTION */
+.section-container {
+  max-width: 1190px;
+  padding: 5rem 1rem;
+  margin: 0 auto;
+  background-image: url(/images/background/bg-curvy-desktop.svg);
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-size: contain;
+}
+
+.big-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+}
+
+.title-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.main-title {
+  font-family: "Raleway", sans-serif;
+  color: var(--text-color);
+  font-size: 2.9em;
+  font-weight: 600;
+  line-height: 1.5em;
+  max-width: 860px;
+  text-align: center;
+}
+
+.main-description {
+  max-width: 580px;
+  font-size: 1.4em;
+  text-align: center;
+}
+
+.cta-button,
+.signup__button {
+  background: var(--background-image);
+  color: var(--text-color);
+  padding: 1rem 2rem;
+  border-radius: 5px;
+  font-size: 1em;
+  border: none;
+  width: 200px;
+  font-weight: 500;
+  transition: 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.cta-button:hover {
+  background: var(--title-color);
+}
+
+/* HERO SECTIONS */
+.hero {
+  background-color: var(--second-background);
+}
+
+.feature-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 5rem;
+}
+
+.container {
+  display: flex;
+  gap: 2rem;
+  flex-direction: column;
+  align-items: center;
+}
+
+.feature-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  text-align: center;
+}
+
+.feature-title {
+  font-family: "Raleway", sans-serif;
+  font-size: 1.4em;
+  font-weight: 700;
+  opacity: 1;
+  line-height: 1.5em;
+  color: var(--text-color);
+}
+
+.feature-subtitle {
+  max-width: 340px;
+  opacity: 0.8;
+  color: var(--text-color-second);
+  line-height: 1.5em;
+}
+
+.work-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  justify-items: center;
+  align-items: center;
+}
+
+.work-title {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.work-info {
+  font-family: "Raleway", sans-serif;
+  max-width: 480px;
+  font-size: 3em;
+  color: var(--text-color);
+}
+
+.work-description {
+  font-size: 1.15em;
+}
+
+.link a {
+  color: var(--title-color);
+  border-bottom: 1px solid var(--title-color);
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+  padding-bottom: 0.2em;
+}
+
+.link a:hover {
+  color: var(--text-color-second);
+  border-bottom: 1px solid var(--text-color-second);
+}
+
+/* TESTIMONIAL CARDS */
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
+  align-items: center;
+  gap: 2rem;
+  padding: 0 2rem;
+}
+
+.review-container {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--background-color);
+  padding: 1.9em 2em;
+  border-radius: 8px;
+  gap: 1.2rem;
+}
+
+.review-info {
+  display: flex;
+  gap: 1rem;
+}
+
+.sub-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+
+.profile-image {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.name-title {
+  font-family: "Raleway", sans-serif;
+  font-size: 0.78em;
+  color: white;
+  font-weight: 600;
+}
+
+.job-title {
+  font-family: "Raleway", sans-serif;
+  font-size: 0.6em;
+  opacity: 0.5;
+}
+
+/* FOOTER */
+.footer {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  margin: 0 auto;
+  background-color: #0b1523;
+  padding: 5rem 1rem;
+  max-width: 1190px;
+}
+
+.mail-container {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--background-color);
+  padding: 2rem;
+  width: 70%;
+  margin: 0 auto;
+  border-radius: 8px;
+  box-shadow: 2px 2px 15px 0 rgba(0, 0, 0, 0.2);
+}
+
+.mail-title {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.signup__title {
+  font-size: 2.4em;
+  font-family: "Raleway", sans-serif;
+  color: var(--text-color);
+}
+
+.signup__paragraph {
+  max-width: 640px;
+  text-align: center;
+}
+
+.signup__form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 880px;
+  gap: 2rem;
+}
+
+.signup__input {
+  font-size: 1em;
+  width: 100%;
+  padding: 1em 2.8em;
+  border: none;
+  outline: none;
+  border-radius: 50px;
+}
+
+.footer-info {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 3rem;
+  justify-items: center;
+  align-items: center;
+}
+
+.Site_Links ul {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.Site_Links a {
+  color: var(--text-color-second);
+}
+
+.address {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.address img {
+  margin-right: 1rem;
+}
+
+.address a {
+  color: var(--text-color-second);
+}
+
+.Social_Media {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.Social_Media i {
+  font-size: 24px;
+  color: var(--text-color-second);
+}
